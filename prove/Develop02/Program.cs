@@ -36,7 +36,7 @@ class Program
 
                     if (readBom.ToLower() == "no")
                     {
-                        Console.WriteLine("\"With frightening speed, a testimony that is not nourished daily “by the good word of God”20 can crumble. Thus, the antidote to Satan’s scheme is clear: we need daily experiences worshipping the Lord and studying His gospel.\"");
+                        Console.WriteLine("\"With frightening speed, a testimony that is not nourished daily “by the good word of God” can crumble. Thus, the antidote to Satan’s scheme is clear: we need daily experiences worshipping the Lord and studying His gospel.\"");
                         Console.WriteLine("- Russell M. Nelson\n");
                     }
 

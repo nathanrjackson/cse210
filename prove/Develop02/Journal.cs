@@ -38,7 +38,7 @@ class Journal
         {
             List<string> parts = line.Split('|').ToList();
 
-            if (parts.Count == 3)
+            if (parts.Count == 4)
             {
                 string date = parts[0];
                 string prompt = parts[1];
