@@ -1,23 +1,23 @@
 class Word
 {
     private string _text;
-    private bool _is_hidden;
+    private bool _isHidden;
 
     public Word(string text, bool is_hidden = false)
     {
         _text = text;
-        _is_hidden = is_hidden;
+        _isHidden = is_hidden;
     }
 
     public void Hide()
     {
         _text = new string('-', _text.Length);
-        _is_hidden = true;
+        _isHidden = true;
     }
 
     public bool IsHidden()
     {
-        return _is_hidden;
+        return _isHidden;
     }
 
     public override string ToString()
