@@ -10,6 +10,7 @@ class Program
         
         Console.Clear();
         Console.WriteLine(scripture);
+        stopwatch.Start();
 
         while (true)
         {
@@ -27,6 +28,10 @@ class Program
 
             if (scripture.AllWordsHidden())
             {
+                Console.WriteLine("\nPress enter when finished:");
+                Console.ReadLine();
+                stopwatch.Stop();
+                Console.WriteLine($"Time elapsed: {stopwatch.Elapsed.TotalSeconds:F2} seconds\n");
                 break;
             }
         }
