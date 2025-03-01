@@ -26,6 +26,10 @@ class Program
                     listingActivity.DoActivity();
                     break;
                 case "4":
+                    AffirmationsActivity affirmationsActivity = new AffirmationsActivity("Affirmations Activity", "This activitiy will help you remember that you have worth and are loved, valued, and appreciated.", 0);
+                    affirmationsActivity.DoActivity();
+                    break;
+                case "5":
                     Environment.Exit(0);
                     break;
             }

@@ -89,7 +89,7 @@ class Activity
         Console.WriteLine("Well done!");
         DisplayAnimation(3);
         Console.WriteLine();
-        Console.WriteLine($"You have completed {duration} seconds of the Breathing Activity.");
+        Console.WriteLine($"You have completed {duration} seconds of the {_name}.");
         DisplayAnimation(3);
     }
 
