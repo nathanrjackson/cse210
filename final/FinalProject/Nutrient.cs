@@ -9,6 +9,5 @@ class Nutrient : FoodItem
         _units = units;
     }
 
-    public override void Display() { { Console.WriteLine($"{GetName()} ({GetQuantity() } {_units})"); }}
-    public override void Describe() { Console.WriteLine($"{GetDesc()}"); }
+    public override void Display() { { Console.WriteLine($"- {GetName()} ({GetQuantity() } {_units}) - {GetDesc()}"); }}
 }

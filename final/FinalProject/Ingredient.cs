@@ -11,8 +11,7 @@ class Ingredient : FoodItem
         _units = units;
     }
 
-    public override void Display() { { Console.WriteLine($"{GetName()} ({GetQuantity() } {_units})"); }}
-    public override void Describe() { Console.WriteLine($"{GetDesc()}"); }
+    public override void Display() { { Console.WriteLine($"{GetName()} ({GetQuantity() } {_units}) - {GetDesc()}"); }}
 
     public void AddNutrient(Nutrient nutrient) { _nutrients.Add(nutrient); }
     public void DisplayNutrients()

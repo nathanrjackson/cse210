@@ -1,26 +1,25 @@
 class MealManager
 {
-    private List<Meal> _meals;
+    private List<Meal> _mealsList;
 
-    public MealManager()
-    {
-        _meals = new List<Meal>();
-    }
+    public MealManager() { _mealsList = new List<Meal>(); }
 
-    public void AddMeal(Meal meal)
-    {
-        _meals.Add(meal);
-    }
+    public Meal GetMeal(int index) { return _mealsList[index]; }
+    public void AddMeal(Meal meal) { _mealsList.Add(meal); }
     public void RemoveMeal(string name)
     {
-        if (_meals.Count > 0) { _meals.RemoveAll(meal => meal.GetName() == name); }
+        if (_mealsList.Count > 0) { _mealsList.RemoveAll(meal => meal.GetName() == name); }
         else { Console.WriteLine("No meals have been added."); }
     }
     public void DisplayMeals()
     {
-        foreach (var meal in _meals)
+        int placeHolder = 1;
+        
+        foreach (var meal in _mealsList)
         {
+            Console.Write($"{placeHolder}. ");
             meal.Display();
+            placeHolder += 1;
         }
     }
 }

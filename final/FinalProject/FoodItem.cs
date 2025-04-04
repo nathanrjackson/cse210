@@ -17,5 +17,4 @@ abstract class FoodItem
     public int GetQuantity() { return _quantity; }
     
     public abstract void Display();
-    public abstract void Describe();
 }
